@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "features": "Fitur",
+    "solutions": "Solusi Untuk Anda",
+    "testimonials": "Testimonial",
+    "pricing": "Harga",
+    "login": "Masuk",
+    "register": "Daftar Gratis"
+  },
+  "logo": "Rangkai Edu",
+  "hero": {
+    "title": "Revolusi Pembelajaran dengan Rangkai Edu",
+    "description": "Platform LMS terdepan untuk sekolah dan guru di Indonesia. Kelola nilai, pantau prestasi, dan libatkan orang tua dengan mudah.",
+    "cta1": "Daftar Coba Gratis",
+    "cta2": "Lihat Demo"
+  },
+  "features": {
+    "title": "Fitur Unggulan",
+    "card1": {
+      "title": "Input Nilai Efisien",
+      "description": "Masukkan dan kelola nilai siswa dengan cepat dan akurat, hemat waktu guru hingga 50%."
+    },
+    "card2": {
+      "title": "Pandangan Orang Tua",
+      "description": "Akses real-time ke nilai dan progres anak, tingkatkan keterlibatan orang tua."
+    },
+    "card3": {
+      "title": "Prestasi Siswa",
+      "description": "Lacak dan rayakan pencapaian siswa dengan laporan visual menarik."
+    },
+    "card4": {
+      "title": "Alat Admin",
+      "description": "Dashboard lengkap untuk pengelolaan sekolah dan analisis data."
+    }
+  },
+  "testimonials": {
+    "title": "Kata Mereka",
+    "testimonial1": {
+      "quote": "\"Rangkai Edu telah mengubah cara kami mengelola pembelajaran. Sangat user-friendly dan efisien!\"",
+      "author": "Ibu Dian S., Guru SMPN 1 Bekasi"
+    },
+    "testimonial2": {
+      "quote": "\"Platform terbaik untuk monitoring prestasi siswa dan komunikasi dengan orang tua.\"",
+      "author": "Bapak Ahmad R., Kepala Sekolah SDN 5 Jakarta"
+    }
+  },
+  "cta": {
+    "title": "Siap Memulai Transformasi Pendidikan?",
+    "description": "Bergabunglah dengan ribuan sekolah yang sudah menggunakan Rangkai Edu untuk pengelolaan LMS yang lebih baik.",
+    "button": "Mulai Gratis Sekarang"
+  },
+  "footer": {
+    "products": "Produk",
+    "features": "Fitur",
+    "solutions": "Solusi",
+    "integrations": "Integrasi",
+    "company": "Perusahaan",
+    "about": "Tentang Kami",
+    "careers": "Karir",
+    "blog": "Blog",
+    "legal": "Legal",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat Layanan",
+    "contact": "Kontak",
+    "description": "Platform LMS inovatif untuk pendidikan Indonesia, mendukung guru, siswa, dan orang tua.",
+    "copyright": "© 2024 Rangkai Edu. All rights reserved."
+  },
+  "lang": {
+    "en": "English",
+    "id": "Bahasa Indonesia"
+  }
+}

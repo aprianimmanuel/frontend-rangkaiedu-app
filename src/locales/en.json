@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "features": "Features",
+    "solutions": "Solutions for You",
+    "testimonials": "Testimonials",
+    "pricing": "Pricing",
+    "login": "Login",
+    "register": "Register Free"
+  },
+  "logo": "Rangkai Edu",
+  "hero": {
+    "title": "Learning Revolution with Rangkai Edu",
+    "description": "Leading LMS platform for schools and teachers in Indonesia. Manage grades, monitor achievements, and engage parents easily.",
+    "cta1": "Try Free",
+    "cta2": "Watch Demo"
+  },
+  "features": {
+    "title": "Featured Features",
+    "card1": {
+      "title": "Efficient Grade Input",
+      "description": "Enter and manage student grades quickly and accurately, saving teachers up to 50% time."
+    },
+    "card2": {
+      "title": "Parent View",
+      "description": "Real-time access to child's grades and progress, increase parent engagement."
+    },
+    "card3": {
+      "title": "Student Achievements",
+      "description": "Track and celebrate student achievements with engaging visual reports."
+    },
+    "card4": {
+      "title": "Admin Tools",
+      "description": "Complete dashboard for school management and data analysis."
+    }
+  },
+  "testimonials": {
+    "title": "What They Say",
+    "testimonial1": {
+      "quote": "\"Rangkai Edu has changed the way we manage learning. Very user-friendly and efficient!\"",
+      "author": "Mrs. Dian S., Teacher at SMPN 1 Bekasi"
+    },
+    "testimonial2": {
+      "quote": "\"The best platform for monitoring student achievements and communication with parents.\"",
+      "author": "Mr. Ahmad R., Principal at SDN 5 Jakarta"
+    }
+  },
+  "cta": {
+    "title": "Ready to Start Education Transformation?",
+    "description": "Join thousands of schools already using Rangkai Edu for better LMS management.",
+    "button": "Start Free Now"
+  },
+  "footer": {
+    "products": "Products",
+    "features": "Features",
+    "solutions": "Solutions",
+    "integrations": "Integrations",
+    "company": "Company",
+    "about": "About Us",
+    "careers": "Careers",
+    "blog": "Blog",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact",
+    "description": "Innovative LMS platform for Indonesian education, supporting teachers, students, and parents.",
+    "copyright": "© 2024 Rangkai Edu. All rights reserved."
+  },
+  "lang": {
+    "en": "English",
+    "id": "Indonesian"
+  }
+}
