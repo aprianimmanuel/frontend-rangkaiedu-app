@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react'; // TEMPORARY: Added hooks import for dev - was missing, causing blank render
 import {
   Box,
   AppBar,
@@ -35,9 +35,13 @@ import { useAuth } from '../contexts/AuthContext';
 import api from '../utils/api';
 
 function PortalOrtu() {
+  console.log('PortalOrtu: Component starting to mount'); // TEMPORARY: Debug log for mount
+
   const navigate = useNavigate();
   const location = useLocation();
   const { user, login, loading: authLoading } = useAuth();
+  console.log('PortalOrtu: Hooks executed - user:', user, 'authLoading:', authLoading); // TEMPORARY: Debug log for hooks
+
   const [isSwitching, setIsSwitching] = useState(false);
 
   const backendRoleMap = {
@@ -68,7 +72,7 @@ function PortalOrtu() {
     },
     {
       key: 'teacher',
-      icon: School,
+      icon: SchoolIcon,
       title: roleTitles.teacher,
       desc: roleDescs.teacher,
       backend: backendRoleMap.teacher,
@@ -120,14 +124,26 @@ function PortalOrtu() {
   };
 
   useEffect(() => {
+    console.log('PortalOrtu: useEffect triggered'); // TEMPORARY: Debug log for useEffect
     const isDev = import.meta.env.DEV;
     if (isDev && !user && !authLoading) {
-      const defaultRoleKey = 'parent';
-      const backendRole = backendRoleMap[defaultRoleKey];
-      const mockToken = generateMockToken(backendRole);
-      login(mockToken);
+      console.log('PortalOrtu: Attempting mock login for dev'); // TEMPORARY: Debug log for login attempt
+      try {
+        const defaultRoleKey = 'parent';
+        const backendRole = backendRoleMap[defaultRoleKey];
+        const mockToken = generateMockToken(backendRole);
+        console.log('PortalOrtu: Generated mockToken:', mockToken); // NEW: Log token for validation
+        login(mockToken);
+        console.log('PortalOrtu: Mock login called successfully'); // TEMPORARY: Debug log after login
+      } catch (error) {
+        console.error('PortalOrtu: Error during mock login:', error); // NEW: Catch and log errors
+      }
+    } else {
+      console.log('PortalOrtu: Skipping mock login - user:', user, 'authLoading:', authLoading); // TEMPORARY: Debug log for skip
     }
   }, [user, authLoading, login]);
+
+  console.log('PortalOrtu: Starting render - user:', user, 'authLoading:', authLoading); // TEMPORARY: Debug log for render start with state
 
   return (
     <Box
@@ -359,6 +375,7 @@ function PortalOrtu() {
       </Container>
     </Box>
   );
+  console.log('PortalOrtu: Render completed without errors'); // TEMPORARY: Debug log for render end
 }
 
 export default PortalOrtu;
