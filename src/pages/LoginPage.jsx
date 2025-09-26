@@ -25,7 +25,7 @@ import { useAuth } from '../contexts/AuthContext';
 import api from '../utils/api';
 import OtpModal from '../components/OtpModal';
 import ReactLogo from '../assets/react.svg';
-import { FamilyRestroom, School, AdminPanelSettings } from '@mui/icons-material';
+import { FamilyRestroom, School, AdminPanelSettings, Face } from '@mui/icons-material';
 
 // Mock GoogleLogin component
 const MockGoogleLogin = ({ onSuccess, onError }) => (
@@ -79,18 +79,21 @@ const LoginPage = () => {
     parent: 'ortu',
     teacher: 'guru',
     admin: 'admin',
+    student: 'siswa',
   };
 
   const roleDisplays = {
     parent: { en: 'Parent', id: 'Orang Tua / Wali' },
     admin: { en: 'School Admin', id: 'Admin Sekolah' },
     teacher: { en: 'Teacher', id: 'Guru' },
+    student: { en: 'Student', id: 'Siswa' },
   };
 
   const roleDescs = {
     parent: { en: "View your child's grades and progress in real-time.", id: 'Lihat nilai dan perkembangan anak Anda secara real-time.' },
     teacher: { en: 'Input grades, manage classes, and connect e-Report easily.', id: 'Input nilai, kelola kelas, dan hubungkan e-Rapor dengan mudah.' },
     admin: { en: 'Manage school master data, teachers, and students centrally.', id: 'Kelola data master sekolah, guru, dan siswa secara terpusat.' },
+    student: { en: 'View schedule, submit assignments, and track your learning progress.', id: 'Lihat jadwal, kumpulkan tugas, dan ikuti progres belajarmu.' },
   };
 
   const getDisplay = (key) => roleDisplays[key]?.[language] || key.charAt(0).toUpperCase() + key.slice(1);
@@ -256,6 +259,13 @@ const LoginPage = () => {
       titleKey: 'admin',
       descKey: 'admin',
       delay: 400
+    },
+    {
+      key: 'student',
+      icon: Face,
+      titleKey: 'student',
+      descKey: 'student',
+      delay: 600
     }
   ];
 
