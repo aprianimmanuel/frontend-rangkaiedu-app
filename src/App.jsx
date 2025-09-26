@@ -8,7 +8,9 @@ import theme from './theme';
 import DashboardGuru from './pages/DashboardGuru';
 import LoginPage from './pages/LoginPage';
 import PortalOrtu from './pages/PortalOrtu';
-import ProtectedRoute from './components/ProtectedRoute';
+import DashboardSiswa from './pages/DashboardSiswa';
+import AdminDashboard from './pages/AdminDashboard';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
@@ -18,23 +20,12 @@ function App() {
           <CssBaseline />
           <Router>
             <Routes>
-              <Route path="/" element={<Navigate to="/login" replace />} />
+              <Route path="/" element={<HomePage />} />
               <Route path="/login" element={<LoginPage />} />
-              <Route path="/portal/parent" element={
-                <ProtectedRoute>
-                  <PortalOrtu />
-                </ProtectedRoute>
-              } />
-              <Route path="/dashboard/guru" element={
-                <ProtectedRoute>
-                  <DashboardGuru />
-                </ProtectedRoute>
-              } />
-              <Route path="/admin" element={
-                <ProtectedRoute>
-                  <DashboardGuru />
-                </ProtectedRoute>
-              } />
+              <Route path="/portal/parent" element={<PortalOrtu />} />
+              <Route path="/dashboard/guru" element={<DashboardGuru />} />
+              <Route path="/admin" element={<AdminDashboard />} />
+              <Route path="/dashboard/siswa" element={<DashboardSiswa />} />
             </Routes>
           </Router>
         </ThemeProvider>

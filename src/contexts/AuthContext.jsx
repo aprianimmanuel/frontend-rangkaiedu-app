@@ -1,9 +1,7 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
 import { getToken, setToken, logout, decodeToken } from '../utils/auth';
 
 const AuthContext = createContext();
-
-console.log('AuthContext module loaded');
 
 export const useAuth = () => {
   const context = useContext(AuthContext);
@@ -20,6 +18,13 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const initAuth = () => {
+      // TEMPORARY: Mock auth for development - remove before production.
+      if (process.env.NODE_ENV === 'development') {
+        setUser({ role: 'admin', name: 'Dev User' });
+        setLoading(false);
+        return;
+      }
+
       setLoading(true);
       const token = getToken();
       if (token) {
@@ -35,8 +40,6 @@ export const AuthProvider = ({ children }) => {
       }
       setLoading(false);
     };
-    
-    console.log('useAuth exported:', typeof useAuth);
 
     initAuth();
   }, []);
@@ -64,14 +67,37 @@ export const AuthProvider = ({ children }) => {
     logout();
   };
 
-  const value = {
+  // Check if user has required role(s)
+  const hasRole = (requiredRoles) => {
+    if (!user || !user.role) return false;
+    
+    // If requiredRoles is a string, convert to array
+    const rolesArray = Array.isArray(requiredRoles) ? requiredRoles : [requiredRoles];
+    
+    // Check if user has any of the required roles
+    return rolesArray.includes(user.role);
+  };
+
+  // Check if user is authenticated and has specific role(s)
+  const isAuthorized = (requiredRoles = []) => {
+    if (!user) return false;
+    
+    // If no specific roles required, just check authentication
+    if (requiredRoles.length === 0) return true;
+    
+    return hasRole(requiredRoles);
+  };
+
+  const value = useMemo(() => ({
     user,
     loading,
     error,
     login,
     logOut,
     isAuthenticated: !!user,
-  };
+    hasRole,
+    isAuthorized,
+  }), [user, loading, error]);
 
   return (
     <AuthContext.Provider value={value}>
@@ -79,5 +105,3 @@ export const AuthProvider = ({ children }) => {
     </AuthContext.Provider>
   );
 };
-
-console.log('AuthProvider rendered');
