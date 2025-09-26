@@ -1,7 +1,11 @@
 // Import necessary modules from MUI
 import { createTheme } from '@mui/material/styles';
 
-// Import Google Fonts: <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+// To load Google Fonts (Nunito Sans and Poppins), add this link to public/index.html in the <head> section:
+// <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+// Alternatively, add @import to src/index.css:
+// @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+// The theme below references these font families; ensure they are loaded for proper rendering.
 
 /**
  * Custom theme for Rangkai Edu application
@@ -57,41 +61,55 @@ const theme = createTheme({
     },
   },
 
-  // Typography System
+  // Typography System - Enhanced with responsive scale, custom variants, accessibility considerations
+  // Uses rem units for scalability, line heights >=1.5 for body text readability,
+  // Poppins (700) for headings, Nunito Sans (400/600) for body/subtitles.
+  // Responsive font sizes via breakpoints (xs/mobile smaller, md+ larger).
   typography: {
-    fontFamily: "'Nunito Sans', sans-serif",
+    fontFamily: "'Nunito Sans', sans-serif", // Default body font
+
+    // Custom variant: Large display for hero sections or banners
+    display1: {
+      fontFamily: "'Poppins', sans-serif",
+      fontWeight: 700,
+      fontSize: { xs: '2.25rem', md: '3.5rem', lg: '4rem' },
+      lineHeight: 1.2,
+      letterSpacing: { xs: '-0.01em', md: '-0.025em' },
+    },
+
+    // Headings: Poppins bold, responsive sizing for better mobile experience
     h1: {
       fontFamily: "'Poppins', sans-serif",
       fontWeight: 700,
-      fontSize: '2.5rem',
+      fontSize: { xs: '1.875rem', md: '2.5rem' },
       lineHeight: 1.2,
-      letterSpacing: '-0.02em',
+      letterSpacing: { xs: '-0.01em', md: '-0.02em' },
     },
     h2: {
       fontFamily: "'Poppins', sans-serif",
       fontWeight: 700,
-      fontSize: '2rem',
+      fontSize: { xs: '1.5rem', md: '2rem', lg: '2.25rem' },
       lineHeight: 1.25,
-      letterSpacing: '-0.015em',
+      letterSpacing: { xs: '-0.01em', md: '-0.015em' },
     },
     h3: {
       fontFamily: "'Poppins', sans-serif",
       fontWeight: 700,
-      fontSize: '1.75rem',
+      fontSize: { xs: '1.375rem', md: '1.75rem' },
       lineHeight: 1.3,
-      letterSpacing: '-0.01em',
+      letterSpacing: { xs: '-0.005em', md: '-0.01em' },
     },
     h4: {
       fontFamily: "'Poppins', sans-serif",
       fontWeight: 700,
-      fontSize: '1.5rem',
+      fontSize: { xs: '1.25rem', md: '1.5rem' },
       lineHeight: 1.35,
       letterSpacing: '-0.005em',
     },
     h5: {
       fontFamily: "'Poppins', sans-serif",
       fontWeight: 700,
-      fontSize: '1.25rem',
+      fontSize: { xs: '1.125rem', md: '1.25rem' },
       lineHeight: 1.4,
     },
     h6: {
@@ -100,50 +118,70 @@ const theme = createTheme({
       fontSize: '1.125rem',
       lineHeight: 1.45,
     },
+
+    // Body text: Nunito Sans regular, enhanced line height for accessibility
     body1: {
       fontFamily: "'Nunito Sans', sans-serif",
       fontWeight: 400,
       fontSize: '1rem',
-      lineHeight: 1.5,
+      lineHeight: 1.6, // Increased from 1.5 for better readability
+      letterSpacing: '0.009em',
     },
     body2: {
       fontFamily: "'Nunito Sans', sans-serif",
       fontWeight: 400,
       fontSize: '0.875rem',
-      lineHeight: 1.43,
+      lineHeight: 1.5, // Ensures >=1.5 for accessibility
+      letterSpacing: '0.007em',
     },
+
+    // Subtitles: Semi-bold for emphasis
     subtitle1: {
       fontFamily: "'Nunito Sans', sans-serif",
       fontWeight: 600,
-      fontSize: '1rem',
-      lineHeight: 1.5,
+      fontSize: { xs: '0.875rem', md: '1rem' },
+      lineHeight: 1.6,
     },
     subtitle2: {
       fontFamily: "'Nunito Sans', sans-serif",
       fontWeight: 600,
       fontSize: '0.875rem',
-      lineHeight: 1.43,
+      lineHeight: 1.5,
     },
+
+    // Custom variant: Prominent body text for leads/intros
+    lead: {
+      fontFamily: "'Nunito Sans', sans-serif",
+      fontWeight: 600,
+      fontSize: { xs: '1rem', md: '1.125rem' },
+      lineHeight: 1.6,
+      letterSpacing: '0.009em',
+    },
+
+    // Smaller text variants
     caption: {
       fontFamily: "'Nunito Sans', sans-serif",
       fontWeight: 400,
       fontSize: '0.75rem',
-      lineHeight: 1.33,
-      letterSpacing: '0.02em',
+      lineHeight: 1.4, // Slightly increased for legibility
+      letterSpacing: '0.033em',
     },
     overline: {
       fontFamily: "'Nunito Sans', sans-serif",
       fontWeight: 600,
       fontSize: '0.75rem',
-      lineHeight: 1.33,
+      lineHeight: 1.4,
       letterSpacing: '0.08em',
       textTransform: 'uppercase',
     },
+
+    // Button text: No transform, semi-bold
     button: {
       fontFamily: "'Nunito Sans', sans-serif",
       fontWeight: 600,
       fontSize: '0.875rem',
       textTransform: 'none',
+      letterSpacing: '0.028em',
     },
   },
 
