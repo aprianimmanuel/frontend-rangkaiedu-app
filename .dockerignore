@@ -1,0 +1,45 @@
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+build
+
+# Environment files (these should be passed as build args)
+.env*
+!.env*.example
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Git
+.git
+.gitignore
+
+# Testing
+coverage/
+.nyc_output/
+
+# Docker
+Dockerfile*
+docker-compose*
+
+# Temporary files
+tmp/
+temp/
+
+# OS generated files
+Thumbs.db
