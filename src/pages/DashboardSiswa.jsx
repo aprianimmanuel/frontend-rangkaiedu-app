@@ -60,7 +60,7 @@ const DashboardSiswa = () => {
       
       <Container maxWidth="lg" sx={{ py: 4 }}>
         {/* Welcome & Gamification Header */}
-        <Grid container spacing={3} sx={{ mb: 4 }}>
+        <Grid container sx={{ mb: 4, gap: 3 }}>
           {/* Welcome Message */}
           <Grid item xs={12} md={6}>
             <Typography variant="h4">Halo, {studentName}!</Typography>
@@ -72,7 +72,7 @@ const DashboardSiswa = () => {
           {/* Gamification Stats */}
           <Grid item xs={12} md={6}>
             <Paper sx={{ p: 2 }}>
-              <Grid container spacing={2} alignItems="center">
+              <Grid container sx={{ spacing: 2, alignItems: 'center', gap: 2 }}>
                 <Grid item xs={12}>
                   <Typography variant="h6">Level 12</Typography>
                 </Grid>
@@ -108,7 +108,7 @@ const DashboardSiswa = () => {
         </Grid>
         
         {/* Core Information Grid */}
-        <Grid container spacing={3}>
+        <Grid container sx={{ gap: 3 }}>
           {/* Tugas Mendatang */}
           <Grid item xs={12} md={7}>
             <Card>

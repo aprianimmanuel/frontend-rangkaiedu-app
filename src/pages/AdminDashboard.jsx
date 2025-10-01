@@ -71,7 +71,7 @@ const AdminDashboard = () => {
       {/* Main Content */}
       <Container maxWidth="lg" sx={{ py: 4 }}>
         {/* KPI Cards */}
-        <Grid container spacing={3} sx={{ mb: 4 }}>
+        <Grid container sx={{ mb: 4, gap: 3 }}>
           {kpiData.map((kpi, index) => (
             <Grid item xs={12} sm={6} md={3} key={index}>
               <Paper sx={{ p: 2 }}>
@@ -90,7 +90,7 @@ const AdminDashboard = () => {
         </Grid>
         
         {/* Data Visualization Section */}
-        <Grid container spacing={3}>
+        <Grid container sx={{ gap: 3 }}>
           {/* Attendance Visualization */}
           <Grid item xs={12} md={8}>
             <Paper sx={{ p: 2 }}>

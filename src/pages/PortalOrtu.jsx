@@ -178,9 +178,7 @@ function PortalOrtu() {
         >
           <Grid
             container
-            spacing={2}
-            alignItems="center"
-            direction={{ xs: 'column', sm: 'row' }}
+            sx={{ alignItems: 'center', direction: { xs: 'column', sm: 'row' }, gap: 2 }}
           >
             <Grid item xs={12} sm={3}>
               <Avatar

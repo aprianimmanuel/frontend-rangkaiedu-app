@@ -185,7 +185,7 @@ const DashboardGuru = ({ teacherName = 'Bapak/Ibu Guru' }) => {
           <Typography>Ganti Peran</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Grid container spacing={2}>
+          <Grid container sx={{ gap: 2 }}>
             {roles.map((role) => (
               <Grid item xs={12} sm={4} key={role.key}>
                 <Card
@@ -218,7 +218,7 @@ const DashboardGuru = ({ teacherName = 'Bapak/Ibu Guru' }) => {
         {import.meta.env.DEV && (
           <Paper sx={{ p: 2, mb: 3, backgroundColor: 'info.light' }}>
             <Typography variant="h6" gutterBottom>Dev Tools: Mock Login</Typography>
-            <Grid container spacing={2}>
+            <Grid container sx={{ gap: 2 }}>
               {roles.map((role) => (
                 <Grid item key={role.key}>
                   <Button
@@ -240,7 +240,7 @@ const DashboardGuru = ({ teacherName = 'Bapak/Ibu Guru' }) => {
         </Typography>
 
         {/* Summary Cards */}
-        <Grid container spacing={3} sx={{ mb: 4, mt: 2 }}>
+        <Grid container sx={{ mb: 4, mt: 2, gap: 3 }}>
           {summaryData.map((item) => (
             <Grid item xs={12} sm={6} md={4} key={item.id}>
               <Card>

@@ -107,7 +107,7 @@ const HomePage = () => {
 {/* TEMPORARY: Debug navigation for development - remove before production. */}
 <Box sx={{ p: 2, bgcolor: 'grey.100', mb: 2 }}>
   <Typography variant="h6" gutterBottom>Debug Navigation</Typography>
-  <Grid container spacing={1}>
+  <Grid container sx={{ gap: 1 }}>
     <Grid item xs={12} sm={6}>
       <Button component={Link} to="/" variant="outlined" fullWidth sx={{ mb: 1 }}>Home (/)</Button>
     </Grid>
@@ -282,7 +282,7 @@ const HomePage = () => {
           <Typography variant="h3" align="center" sx={{ mb: 6, color: 'text.primary' }}>
             {t('features.title')}
           </Typography>
-          <Grid container spacing={4} justifyContent="center">
+          <Grid container sx={{ gap: 4, justifyContent: 'center' }}>
             {/* Feature 1 */}
             <Grid item xs={12} md={6} lg={3}>
               <Card
@@ -381,7 +381,7 @@ const HomePage = () => {
           <Typography variant="h3" align="center" sx={{ mb: 6, color: 'text.primary' }}>
             {t('testimonials.title')}
           </Typography>
-          <Grid container spacing={4} justifyContent="center">
+          <Grid container sx={{ gap: 4, justifyContent: 'center' }}>
             {/* Testimonial 1 */}
             <Grid item xs={12} md={6}>
               <Card sx={{ boxShadow: 2 }}>
@@ -454,7 +454,7 @@ const HomePage = () => {
       {/* Footer */}
       <Box sx={{ mt: 'auto', bgcolor: 'primary.main', color: 'white', py: 6 }}>
         <Container maxWidth="lg">
-          <Grid container spacing={4}>
+          <Grid container sx={{ gap: 4 }}>
             {/* Column 1: Produk */}
             <Grid item xs={12} sm={6} md={3}>
               <Typography variant="h6" gutterBottom sx={{ color: 'white' }}>
