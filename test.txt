@@ -1,0 +1,1792 @@
+
+> frontend-app@0.0.0 test
+> jest --verbose --silent --runInBand
+
+FAIL src/__tests__/AuthIntegration.test.jsx (80.725 s)
+  Auth Integration Flow
+    ✕ unauthenticated user sees login page and can select role (11123 ms)
+    ✕ completes WhatsApp login flow and redirects to protected route (10792 ms)
+    ✕ completes Google login and accesses protected route with correct role (10297 ms)
+    ✕ handles unauthorized access to protected route (15004 ms)
+    ✓ logs out and redirects to login (101 ms)
+    ✕ handles 401 error by logging out and redirecting to login (1 ms)
+
+  ● Auth Integration Flow › unauthenticated user sees login page and can select role
+
+    Unable to find role="heading" and name `/login as parent/i`
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<main[39m
+          [33mclass[39m=[32m"MuiBox-root css-1rg9k9"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"MuiBox-root css-1jdfalb"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-i0vgz5"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiBox-root css-f58x1t"[39m
+              [36m>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Rangkaiedu Logo"[39m
+                  [33msrc[39m=[32m"test-file-stub"[39m
+                  [33mstyle[39m=[32m"width: 100%; height: 100%; object-fit: cover;"[39m
+                [36m/>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiStack-root css-196dojr-MuiStack-root"[39m
+              [36m>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mEN[0m
+                [36m</p>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"MuiSwitch-root MuiSwitch-sizeSmall css-fzgmul-MuiSwitch-root"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"[39m
+                      [33mrole[39m=[32m"switch"[39m
+                      [33mtype[39m=[32m"checkbox"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiSwitch-thumb css-17jyosd-MuiSwitch-thumb"[39m
+                    [36m/>[39m
+                  [36m</span>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiSwitch-track css-tj8d99-MuiSwitch-track"[39m
+                  [36m/>[39m
+                [36m</span>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mID[0m
+                [36m</p>[39m
+              [36m</div>[39m
+              [36m<h1[39m
+                [33mclass[39m=[32m"MuiTypography-root MuiTypography-h3 css-p06om4-MuiTypography-root"[39m
+              [36m>[39m
+                [0mWelcome to Rangkaiedu[0m
+              [36m</h1>[39m
+              [36m<h6[39m
+                [33mclass[39m=[32m"MuiTypography-root MuiTypography-h6 css-efxhx8-MuiTypography-root"[39m
+              [36m>[39m
+                [0mChoose your role to get started[0m
+              [36m</h6>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row css-19rdnyt-MuiGrid-root"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1pgp8yv-MuiPaper-root-MuiCard-root"[39m
+                    [33mstyle[39m=[32m"--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); opacity: 1; transition-delay: 0ms; transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-u502b5-MuiButtonBase-root-MuiButton-root"[39m
+                      [33mtabindex[39m=[32m"0"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [36m<svg[39m
+                        [33maria-hidden[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ottyza-MuiSvgIcon-root"[39m
+                        [33mdata-testid[39m=[32m"FamilyRestroomIcon"[39m
+                        [33mfocusable[39m=[32m"false"[39m
+                        [33mviewBox[39m=[32m"0 0 24 24"[39m
+                      [36m>[39m
+                        [36m<path[39m
+                          [33md[39m=[32m"M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m4 18v-6h2.5l-2.54-7.63C19.68 7.55 18.92 7 18.06 7h-.12c-.86 0-1.63.55-1.9 1.37l-.86 2.58c1.08.6 1.82 1.73 1.82 3.05v8zm-7.5-10.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5S11 9.17 11 10s.67 1.5 1.5 1.5M5.5 6c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2m2 16v-7H9V9c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v6h1.5v7zm6.5 0v-4h1v-4c0-.82-.68-1.5-1.5-1.5h-2c-.82 0-1.5.68-1.5 1.5v4h1v4z"[39m
+                        [36m/>[39m
+                      [36m</svg>[39m
+                      [36m<h6[39m
+                        [33mclass[39m=[32m"MuiTypography-root MuiTypography-h6 css-w2g6f8-MuiTypography-root"[39m
+                      [36m>[39m
+                        [0mParent[0m
+                      [36m</h6>[39m
+                      [36m<p[39m
+                        [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"[39m
+                      [36m>[39m
+                        [0mView your child's grades and progress in real-time.[0m
+                      [36m</p>[39m
+                      [36m<span[39m
+                        [33mclass[39m=[32m"MuiTouchRipple-root css-r3djoj-MuiTouchRipple-root"[39m
+                      [36m/>[39m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1pgp8yv-MuiPaper-root-MuiCard-root"[39m
+                    [33mstyle[39m=[32m"--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); opacity: 1; transition-delay: 200ms; transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary Mu...
+
+      210 |
+      211 |     // Wait for the login form to appear
+    > 212 |     await waitFor(() => {
+          |                  ^
+      213 |       expect(screen.getByRole('heading', { name: /login as parent/i })).toBeInTheDocument();
+      214 |     }, { timeout: 10000 });
+      215 |     
+
+      at waitForWrapper (node_modules/@testing-library/dom/dist/wait-for.js:163:27)
+      at Object.<anonymous> (src/__tests__/AuthIntegration.test.jsx:212:18)
+
+  ● Auth Integration Flow › completes WhatsApp login flow and redirects to protected route
+
+    Unable to find a label with the text of: /phone number/i
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<main[39m
+          [33mclass[39m=[32m"MuiBox-root css-1rg9k9"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"MuiBox-root css-1jdfalb"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-i0vgz5"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiBox-root css-f58x1t"[39m
+              [36m>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Rangkaiedu Logo"[39m
+                  [33msrc[39m=[32m"test-file-stub"[39m
+                  [33mstyle[39m=[32m"width: 100%; height: 100%; object-fit: cover;"[39m
+                [36m/>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiStack-root css-196dojr-MuiStack-root"[39m
+              [36m>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mEN[0m
+                [36m</p>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"MuiSwitch-root MuiSwitch-sizeSmall css-fzgmul-MuiSwitch-root"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"[39m
+                      [33mrole[39m=[32m"switch"[39m
+                      [33mtype[39m=[32m"checkbox"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiSwitch-thumb css-17jyosd-MuiSwitch-thumb"[39m
+                    [36m/>[39m
+                  [36m</span>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiSwitch-track css-tj8d99-MuiSwitch-track"[39m
+                  [36m/>[39m
+                [36m</span>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mID[0m
+                [36m</p>[39m
+              [36m</div>[39m
+              [36m<h1[39m
+                [33mclass[39m=[32m"MuiTypography-root MuiTypography-h3 css-p06om4-MuiTypography-root"[39m
+              [36m>[39m
+                [0mWelcome to Rangkaiedu[0m
+              [36m</h1>[39m
+              [36m<h6[39m
+                [33mclass[39m=[32m"MuiTypography-root MuiTypography-h6 css-efxhx8-MuiTypography-root"[39m
+              [36m>[39m
+                [0mChoose your role to get started[0m
+              [36m</h6>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row css-19rdnyt-MuiGrid-root"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1pgp8yv-MuiPaper-root-MuiCard-root"[39m
+                    [33mstyle[39m=[32m"--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); opacity: 1; transition-delay: 0ms; transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-u502b5-MuiButtonBase-root-MuiButton-root"[39m
+                      [33mtabindex[39m=[32m"0"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [36m<svg[39m
+                        [33maria-hidden[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ottyza-MuiSvgIcon-root"[39m
+                        [33mdata-testid[39m=[32m"FamilyRestroomIcon"[39m
+                        [33mfocusable[39m=[32m"false"[39m
+                        [33mviewBox[39m=[32m"0 0 24 24"[39m
+                      [36m>[39m
+                        [36m<path[39m
+                          [33md[39m=[32m"M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m4 18v-6h2.5l-2.54-7.63C19.68 7.55 18.92 7 18.06 7h-.12c-.86 0-1.63.55-1.9 1.37l-.86 2.58c1.08.6 1.82 1.73 1.82 3.05v8zm-7.5-10.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5S11 9.17 11 10s.67 1.5 1.5 1.5M5.5 6c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2m2 16v-7H9V9c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v6h1.5v7zm6.5 0v-4h1v-4c0-.82-.68-1.5-1.5-1.5h-2c-.82 0-1.5.68-1.5 1.5v4h1v4z"[39m
+                        [36m/>[39m
+                      [36m</svg>[39m
+                      [36m<h6[39m
+                        [33mclass[39m=[32m"MuiTypography-root MuiTypography-h6 css-w2g6f8-MuiTypography-root"[39m
+                      [36m>[39m
+                        [0mParent[0m
+                      [36m</h6>[39m
+                      [36m<p[39m
+                        [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"[39m
+                      [36m>[39m
+                        [0mView your child's grades and progress in real-time.[0m
+                      [36m</p>[39m
+                      [36m<span[39m
+                        [33mclass[39m=[32m"MuiTouchRipple-root css-r3djoj-MuiTouchRipple-root"[39m
+                      [36m/>[39m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1pgp8yv-MuiPaper-root-MuiCard-root"[39m
+                    [33mstyle[39m=[32m"--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); opacity: 1; transition-delay: 200ms; transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary Mu...
+
+      253 |
+      254 |     // Wait for phone number input to appear
+    > 255 |     await waitFor(() => {
+          |                  ^
+      256 |       expect(screen.getByLabelText(/phone number/i)).toBeInTheDocument();
+      257 |     }, { timeout: 10000 });
+      258 |
+
+      at waitForWrapper (node_modules/@testing-library/dom/dist/wait-for.js:163:27)
+      at Object.<anonymous> (src/__tests__/AuthIntegration.test.jsx:255:18)
+
+  ● Auth Integration Flow › completes Google login and accesses protected route with correct role
+
+    Unable to find role="heading" and name `/login as school admin/i`
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<main[39m
+          [33mclass[39m=[32m"MuiBox-root css-1rg9k9"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"MuiBox-root css-1jdfalb"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-i0vgz5"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiBox-root css-f58x1t"[39m
+              [36m>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Rangkaiedu Logo"[39m
+                  [33msrc[39m=[32m"test-file-stub"[39m
+                  [33mstyle[39m=[32m"width: 100%; height: 100%; object-fit: cover;"[39m
+                [36m/>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiStack-root css-196dojr-MuiStack-root"[39m
+              [36m>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mEN[0m
+                [36m</p>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"MuiSwitch-root MuiSwitch-sizeSmall css-fzgmul-MuiSwitch-root"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"[39m
+                      [33mrole[39m=[32m"switch"[39m
+                      [33mtype[39m=[32m"checkbox"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiSwitch-thumb css-17jyosd-MuiSwitch-thumb"[39m
+                    [36m/>[39m
+                  [36m</span>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiSwitch-track css-tj8d99-MuiSwitch-track"[39m
+                  [36m/>[39m
+                [36m</span>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mID[0m
+                [36m</p>[39m
+              [36m</div>[39m
+              [36m<h1[39m
+                [33mclass[39m=[32m"MuiTypography-root MuiTypography-h3 css-p06om4-MuiTypography-root"[39m
+              [36m>[39m
+                [0mWelcome to Rangkaiedu[0m
+              [36m</h1>[39m
+              [36m<h6[39m
+                [33mclass[39m=[32m"MuiTypography-root MuiTypography-h6 css-efxhx8-MuiTypography-root"[39m
+              [36m>[39m
+                [0mChoose your role to get started[0m
+              [36m</h6>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row css-19rdnyt-MuiGrid-root"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1pgp8yv-MuiPaper-root-MuiCard-root"[39m
+                    [33mstyle[39m=[32m"--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); opacity: 1; transition-delay: 0ms; transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-u502b5-MuiButtonBase-root-MuiButton-root"[39m
+                      [33mtabindex[39m=[32m"0"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [36m<svg[39m
+                        [33maria-hidden[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ottyza-MuiSvgIcon-root"[39m
+                        [33mdata-testid[39m=[32m"FamilyRestroomIcon"[39m
+                        [33mfocusable[39m=[32m"false"[39m
+                        [33mviewBox[39m=[32m"0 0 24 24"[39m
+                      [36m>[39m
+                        [36m<path[39m
+                          [33md[39m=[32m"M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m4 18v-6h2.5l-2.54-7.63C19.68 7.55 18.92 7 18.06 7h-.12c-.86 0-1.63.55-1.9 1.37l-.86 2.58c1.08.6 1.82 1.73 1.82 3.05v8zm-7.5-10.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5S11 9.17 11 10s.67 1.5 1.5 1.5M5.5 6c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2m2 16v-7H9V9c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v6h1.5v7zm6.5 0v-4h1v-4c0-.82-.68-1.5-1.5-1.5h-2c-.82 0-1.5.68-1.5 1.5v4h1v4z"[39m
+                        [36m/>[39m
+                      [36m</svg>[39m
+                      [36m<h6[39m
+                        [33mclass[39m=[32m"MuiTypography-root MuiTypography-h6 css-w2g6f8-MuiTypography-root"[39m
+                      [36m>[39m
+                        [0mParent[0m
+                      [36m</h6>[39m
+                      [36m<p[39m
+                        [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"[39m
+                      [36m>[39m
+                        [0mView your child's grades and progress in real-time.[0m
+                      [36m</p>[39m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1pgp8yv-MuiPaper-root-MuiCard-root"[39m
+                    [33mstyle[39m=[32m"--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); opacity: 1; transition-delay: 200ms; transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-u502b5-MuiButtonBase-root-MuiButton-root"[39m
+                      [33mtabindex[39m=[32m"0"[39m
+                      [33mtype[39m=[32m"butto...
+
+      309 |
+      310 |     // Wait for login form to appear
+    > 311 |     await waitFor(() => {
+          |                  ^
+      312 |       expect(screen.getByRole('heading', { name: /login as school admin/i })).toBeInTheDocument();
+      313 |     }, { timeout: 10000 });
+      314 |
+
+      at waitForWrapper (node_modules/@testing-library/dom/dist/wait-for.js:163:27)
+      at Object.<anonymous> (src/__tests__/AuthIntegration.test.jsx:311:18)
+
+  ● Auth Integration Flow › handles unauthorized access to protected route
+
+    thrown: "Exceeded timeout of 15000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      327 |   }, 15000);
+      328 |
+    > 329 |   it('handles unauthorized access to protected route', async () => {
+          |   ^
+      330 |     // Mock authenticated as 'guru' but try to access 'admin' route
+      331 |     window.localStorage.setItem('token', 'mock-token-guru');
+      332 |     
+
+      at it (src/__tests__/AuthIntegration.test.jsx:329:3)
+      at Object.describe (src/__tests__/AuthIntegration.test.jsx:193:1)
+
+  ● Auth Integration Flow › handles 401 error by logging out and redirecting to login
+
+    ReferenceError: authUtils is not defined
+
+      404 |   it('handles 401 error by logging out and redirecting to login', async () => {
+      405 |     const mockToken = 'token';
+    > 406 |     authUtils.decodeToken.mockImplementation(() => ({ id: '1', role: 'admin', exp: Math.floor(Date.now() / 1000) + 3600 }));
+          |     ^
+      407 |     authUtils.isTokenExpired.mockReturnValue(false);
+      408 |     authUtils.getToken.mockReturnValue(mockToken);
+      409 |
+
+      at Object.authUtils (src/__tests__/AuthIntegration.test.jsx:406:5)
+
+FAIL src/pages/LoginPage.test.jsx (58.949 s)
+  LoginPage
+    ✓ renders role selection cards correctly (379 ms)
+    ✓ switches language between EN and ID (185 ms)
+    ✕ shows loading state during role verification (5327 ms)
+    ✓ handles role verification success and shows login form (325 ms)
+    ✓ handles role verification failure and shows error snackbar (271 ms)
+    ✕ validates phone number input (5875 ms)
+    ✓ disables send OTP button for invalid phone (394 ms)
+    ✓ sends WhatsApp OTP on valid submission (426 ms)
+    ✓ handles WhatsApp OTP send error (424 ms)
+    ✕ handles Google login success (5433 ms)
+    ✓ handles Google login error (305 ms)
+    ✓ handles Facebook login success (254 ms)
+    ✕ redirects authenticated user to role-specific route (10056 ms)
+    ✓ supports keyboard navigation for accessibility (111 ms)
+    ✓ displays error snackbar and allows dismissal (517 ms)
+    ✕ handles loading state during login processes (6190 ms)
+    ✕ handles email login form validation (7493 ms)
+    ✕ handles successful email login (7561 ms)
+
+  ● LoginPage › shows loading state during role verification
+
+    expect(received).toBeInTheDocument()
+
+    received value must be an HTMLElement or an SVGElement.
+    Received has value: null
+
+    Ignored nodes: comments, script, style
+    [36m<html>[39m
+      [36m<head>[39m
+        [36m<meta[39m
+          [33mcontent[39m=[32m""[39m
+          [33mname[39m=[32m"emotion-insertion-point"[39m
+        [36m/>[39m
+      [36m</head>[39m
+      [36m<body>[39m
+        [36m<div>[39m
+          [36m<main[39m
+            [33mclass[39m=[32m"MuiBox-root css-1rg9k9"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-1jdfalb"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiBox-root css-i0vgz5"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiBox-root css-f58x1t"[39m
+                [36m>[39m
+                  [36m<img[39m
+                    [33malt[39m=[32m"Rangkaiedu Logo"[39m
+                    [33msrc[39m=[32m"test-file-stub"[39m
+                    [33mstyle[39m=[32m"width: 100%; height: 100%; object-fit: cover;"[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiStack-root css-196dojr-MuiStack-root"[39m
+                [36m>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                  [36m>[39m
+                    [0mEN[0m
+                  [36m</p>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiSwitch-root MuiSwitch-sizeSmall css-fzgmul-MuiSwitch-root"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"[39m
+                        [33mrole[39m=[32m"switch"[39m
+                        [33mtype[39m=[32m"checkbox"[39m
+                      [36m/>[39m
+                      [36m<span[39m
+                        [33mclass[39m=[32m"MuiSwitch-thumb css-17jyosd-MuiSwitch-thumb"[39m
+                      [36m/>[39m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiSwitch-track css-tj8d99-MuiSwitch-track"[39m
+                    [36m/>[39m
+                  [36m</span>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                  [36m>[39m
+                    [0mID[0m
+                  [36m</p>[39m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1rzje4a-MuiButtonBase-root-MuiButton-root"[39m
+                  [33mtabindex[39m=[32m"0"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m← [0m
+                  [0mBack to roles[0m
+                [36m</button>[39m
+                [36m<h1[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-h4 css-10tsqdu-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mLogin as Parent[0m
+                [36m</h1>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiTabs-root css-ee6ibs-MuiTabs-root"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiTabs-scroller MuiTabs-fixed css-s2t35c-MuiTabs-scroller"[39m
+                    [33mstyle[39m=[32m"overflow: hidden; margin-bottom: 0px;"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"MuiTabs-list MuiTabs-flexContainer css-hzcega-MuiTabs-list"[39m
+                      [33mrole[39m=[32m"tablist"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33maria-selected[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth Mui-selected css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                        [33mrole[39m=[32m"tab"[39m
+                        [33mtabindex[39m=[32m"0"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEmail[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33maria-selected[39m=[32m"false"[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                        [33mrole[39m=[32m"tab"[39m
+                        [33mtabindex[39m=[32m"-1"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mWhatsApp[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33maria-selected[39m=[32m"false"[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                        [33mrole[39m=[32m"tab"[39m
+                        [33mtabindex[39m=[32m"-1"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mSocial[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiTabs-indicator css-1qltlow-MuiTabs-indicator"[39m
+                      [33mstyle[39m=[32m"left: 0px; width: 0px;"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<form[39m
+                  [33mclass[39m=[32m"MuiBox-root css-8atqhb"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiStack-root css-lbjakd-MuiStack-root"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33maria-describedby[39m=[32m"email-helper-text"[39m
+                      [33mclass[39m=[32m"MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"[39m
+                    [36m>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"[39m
+                        [33mdata-shrink[39m=[32m"true"[39m
+        ...
+
+      105 |     // Wait a bit for the loading state to appear
+      106 |     await waitFor(() => {
+    > 107 |       expect(screen.queryByRole('progressbar')).toBeInTheDocument();
+          |                                                 ^
+      108 |     }, { timeout: 5000 });
+      109 |
+      110 |     await waitFor(() => {
+
+      at __EXTERNAL_MATCHER_TRAP__ (node_modules/expect/build/index.js:2240:22)
+      at Object.throwingMatcher [as toBeInTheDocument] (node_modules/expect/build/index.js:2241:6)
+      at toBeInTheDocument (src/pages/LoginPage.test.jsx:107:49)
+      at runWithExpensiveErrorDiagnosticsDisabled (node_modules/@testing-library/dom/dist/config.js:47:12)
+      at checkCallback (node_modules/@testing-library/dom/dist/wait-for.js:124:77)
+      at checkRealTimersCallback (node_modules/@testing-library/dom/dist/wait-for.js:118:16)
+
+  ● LoginPage › validates phone number input
+
+    Unable to find an element with the text: Enter valid Indonesian number (e.g., +6281234567890). This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<main[39m
+          [33mclass[39m=[32m"MuiBox-root css-1rg9k9"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"MuiBox-root css-1jdfalb"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-i0vgz5"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiBox-root css-f58x1t"[39m
+              [36m>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Rangkaiedu Logo"[39m
+                  [33msrc[39m=[32m"test-file-stub"[39m
+                  [33mstyle[39m=[32m"width: 100%; height: 100%; object-fit: cover;"[39m
+                [36m/>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiStack-root css-196dojr-MuiStack-root"[39m
+              [36m>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mEN[0m
+                [36m</p>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"MuiSwitch-root MuiSwitch-sizeSmall css-fzgmul-MuiSwitch-root"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"[39m
+                      [33mrole[39m=[32m"switch"[39m
+                      [33mtype[39m=[32m"checkbox"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiSwitch-thumb css-17jyosd-MuiSwitch-thumb"[39m
+                    [36m/>[39m
+                  [36m</span>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiSwitch-track css-tj8d99-MuiSwitch-track"[39m
+                  [36m/>[39m
+                [36m</span>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mID[0m
+                [36m</p>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1rzje4a-MuiButtonBase-root-MuiButton-root"[39m
+                [33mtabindex[39m=[32m"0"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0m← [0m
+                [0mBack to roles[0m
+              [36m</button>[39m
+              [36m<h1[39m
+                [33mclass[39m=[32m"MuiTypography-root MuiTypography-h4 css-10tsqdu-MuiTypography-root"[39m
+              [36m>[39m
+                [0mLogin as Parent[0m
+              [36m</h1>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiTabs-root css-ee6ibs-MuiTabs-root"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiTabs-scroller MuiTabs-fixed css-s2t35c-MuiTabs-scroller"[39m
+                  [33mstyle[39m=[32m"overflow: hidden; margin-bottom: 0px;"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiTabs-list MuiTabs-flexContainer css-hzcega-MuiTabs-list"[39m
+                    [33mrole[39m=[32m"tablist"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33maria-selected[39m=[32m"false"[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                      [33mrole[39m=[32m"tab"[39m
+                      [33mtabindex[39m=[32m"-1"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mEmail[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33maria-selected[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth Mui-selected css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                      [33mrole[39m=[32m"tab"[39m
+                      [33mtabindex[39m=[32m"0"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mWhatsApp[0m
+                      [36m<span[39m
+                        [33mclass[39m=[32m"MuiTouchRipple-root css-r3djoj-MuiTouchRipple-root"[39m
+                      [36m/>[39m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33maria-selected[39m=[32m"false"[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                      [33mrole[39m=[32m"tab"[39m
+                      [33mtabindex[39m=[32m"-1"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mSocial[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiTabs-indicator css-1qltlow-MuiTabs-indicator"[39m
+                    [33mstyle[39m=[32m"left: 0px; width: 0px;"[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiStack-root css-lbjakd-MuiStack-root"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33maria-invalid[39m=[32m"true"[39m
+                  [33mclass[39m=[32m"MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"[39m
+                [36m>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-error MuiFormLabel-filled Mui-focused MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"[39m
+                    [33mdata-shrink[39m=[32m"true"[39m
+                    [33mfor[39m=[32m"«r1e»"[39m
+                    [33mid[39m=[32m"«r1e»-label"[39m
+                  [36m>[39m
+                    [0mPhone Number[0m
+                  [36m</label>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary Mui-error MuiInputBase-fullWidth Mui-focused MuiInputBase-formControl MuiInputBase-adornedStart css-ot336b-MuiInputBase-root-MuiOutlinedInput-root"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"MuiInputAdornment-root MuiInputAdornment-positionStart MuiInputAdornment-outlined MuiInputAdornment-sizeMedium css-1nowbqt-MuiInputAdornment-root"[39m
+                    [36m>[39m
+                      [36m<span[39m
+                        [33maria-hidden[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"notranslate"[39m
+                      [36m>[39m
+                        [0m​[0m
+                      [36m</span>[39m
+                      [36m<svg[39m
+                        [33maria-hidden[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"[39m
+                        [33mdata-testid[39m=[32m"PhoneIcon"[39m
+                        [33mfocusable[39m=[32m"false"[39m
+                        [33mviewBox[39m=[32m"0 0 24 24"[39m
+                      [36m>[39m
+                        [36m<path[39m
+                          [33md[39m=[32m"M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"[39m
+                        [36m/>[39m
+                      [36m</svg>[39m
+                    [36m</div>[39m
+                    [36m<input[39m
+                      [33maria-describedby[39m=[32m"«r1e»-helper-text"[39m
+                      [33maria-invalid[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputAdornedStart css-2u11ia-MuiInputBase-input-MuiOutlinedInput-input"[39m
+                      [33mid[39m=[32m"«r1e»"[39m
+                      [33mplaceholder[39m=[32m"+62..."[39m
+                      [33mtype[39m=[32m"text"[39m
+                      [33mvalue[39m=[32m"invalid"[39m
+                    [36m/>[39m
+                    [36m<fieldset[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"[39m
+                    [36m>[39m
+                      [36m<legend[39m
+                        [33mclass[39m=[32m"css-ex8a5f-MuiNotchedOutlined-root"[39m
+                      [36m>[39m
+                        [36m<span>[39m
+                          [0mPhone Number[0m
+                        [36m</span>[39m
+                      [36m</legend>[39m
+                    [36m</fieldset>[39m
+                  [36m</div>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiFormHelperText-root Mui-error MuiFormHelperText-sizeMedium MuiFormHelperText-contained Mui-focused MuiFormHelperText-filled css-er619e-MuiFormHelperText-root"[39m
+                    [33mid[39m=[32m"«r1e»-helper-text"[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth Mui-disabled MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-pegmjb-MuiButtonBase-root-MuiButton-root"[39m
+                  [33mdisabled[39m=[32m""[39m
+                  [33mtabindex[39m=[32m"-1"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mSend OTP via WhatsApp[0m
+                [36m</button>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33maria-orientation[39m=[32m"horizontal"[39m
+                [33mclass[39m=[32m"MuiDivider-root MuiDivider-fullWidth MuiDivider-withChildren css-npc9b-MuiDivider-root"[39m
+                [33mrole[39m=[32m"separator"[39m
+              [36m>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"MuiDivider-wrapper css-1134oje-MuiDivider-wrapper"[39m
+                [36m>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                  [36m>[39m
+                    [0mor[0m
+                  [36m</p>[39m
+                [36m</span>[39m
+              [36m</div>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-1r4b5bp-MuiTypography-root"[39m
+                [33mstyle[39m=[32m"--Typography-textAlign: center;"[39m
+              [36m>[39m
+                [0mDon't have an account? Contact your administrator[0m
+              [36m</p>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</main>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      173 |
+      174 |     expect(phoneInput).toHaveAttribute('aria-invalid', 'true');
+    > 175 |     await waitFor(() => {
+          |                  ^
+      176 |       expect(screen.getByText('Enter valid Indonesian number (e.g., +6281234567890)')).toBeInTheDocument();
+      177 |     }, { timeout: 5000 });
+      178 |
+
+      at waitForWrapper (node_modules/@testing-library/dom/dist/wait-for.js:163:27)
+      at Object.<anonymous> (src/pages/LoginPage.test.jsx:175:18)
+
+  ● LoginPage › handles Google login success
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "/portal/parent"
+
+    Number of calls: 0
+
+    Ignored nodes: comments, script, style
+    [36m<html>[39m
+      [36m<head>[39m
+        [36m<meta[39m
+          [33mcontent[39m=[32m""[39m
+          [33mname[39m=[32m"emotion-insertion-point"[39m
+        [36m/>[39m
+      [36m</head>[39m
+      [36m<body>[39m
+        [36m<div>[39m
+          [36m<main[39m
+            [33mclass[39m=[32m"MuiBox-root css-1rg9k9"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-1jdfalb"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiBox-root css-i0vgz5"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiBox-root css-f58x1t"[39m
+                [36m>[39m
+                  [36m<img[39m
+                    [33malt[39m=[32m"Rangkaiedu Logo"[39m
+                    [33msrc[39m=[32m"test-file-stub"[39m
+                    [33mstyle[39m=[32m"width: 100%; height: 100%; object-fit: cover;"[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiStack-root css-196dojr-MuiStack-root"[39m
+                [36m>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                  [36m>[39m
+                    [0mEN[0m
+                  [36m</p>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiSwitch-root MuiSwitch-sizeSmall css-fzgmul-MuiSwitch-root"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"[39m
+                        [33mrole[39m=[32m"switch"[39m
+                        [33mtype[39m=[32m"checkbox"[39m
+                      [36m/>[39m
+                      [36m<span[39m
+                        [33mclass[39m=[32m"MuiSwitch-thumb css-17jyosd-MuiSwitch-thumb"[39m
+                      [36m/>[39m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiSwitch-track css-tj8d99-MuiSwitch-track"[39m
+                    [36m/>[39m
+                  [36m</span>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                  [36m>[39m
+                    [0mID[0m
+                  [36m</p>[39m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1rzje4a-MuiButtonBase-root-MuiButton-root"[39m
+                  [33mtabindex[39m=[32m"0"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m← [0m
+                  [0mBack to roles[0m
+                [36m</button>[39m
+                [36m<h1[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-h4 css-10tsqdu-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mLogin as Parent[0m
+                [36m</h1>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiTabs-root css-ee6ibs-MuiTabs-root"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiTabs-scroller MuiTabs-fixed css-s2t35c-MuiTabs-scroller"[39m
+                    [33mstyle[39m=[32m"overflow: hidden; margin-bottom: 0px;"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"MuiTabs-list MuiTabs-flexContainer css-hzcega-MuiTabs-list"[39m
+                      [33mrole[39m=[32m"tablist"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33maria-selected[39m=[32m"false"[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                        [33mrole[39m=[32m"tab"[39m
+                        [33mtabindex[39m=[32m"-1"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEmail[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33maria-selected[39m=[32m"false"[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                        [33mrole[39m=[32m"tab"[39m
+                        [33mtabindex[39m=[32m"-1"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mWhatsApp[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33maria-selected[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth Mui-selected css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                        [33mrole[39m=[32m"tab"[39m
+                        [33mtabindex[39m=[32m"0"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mSocial[0m
+                        [36m<span[39m
+                          [33mclass[39m=[32m"MuiTouchRipple-root css-r3djoj-MuiTouchRipple-root"[39m
+                        [36m/>[39m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiTabs-indicator css-1qltlow-MuiTabs-indicator"[39m
+                      [33mstyle[39m=[32m"left: 0px; width: 0px;"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiStack-root css-lbjakd-MuiStack-root"[39m
+                [36m>[39m
+                  [36m<button[39m
+                    [33maria-label[39m=[32m"Mock Google Login for testing"[39m
+                    [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth Mui-focusVisible MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-cawjkn-MuiButtonBase-root-MuiButton-root"[39m
+                    [33mdata-testid[39m=[32m"mock-google-login-button"[39m
+                    [33mtabindex[39m=[32m"0"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiButton-icon MuiButton-startIcon MuiButton-iconSizeLarge css-hev6se-MuiButton-startIcon"[39m
+                    [36m>[39m
+                      [36m<svg[39m
+                        [33maria-hidden[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"[39m
+                        [33mdata-testid[39m=[32m"GoogleIcon"[39m
+                        [33mfocusable[39m=[32m"false"[39m
+                        [33mviewBox[39m=[32m"0 0 24 24"[39m
+                      [36m>[39m
+                        [36m<path[39m
+                          [33md[39m=[32m"M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.748L12.545,10.239z"[39m
+                        [36m/>[39m
+                      [36m</svg>[39m
+                    [36m</span>[39m
+                    [0mMock Google Login[0m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiTouchRipple-root css-r3djoj-MuiTouchRipple-root"[39m
+                    [36m>[39m
+                      [36m<span[39m
+                        [33mclass[39m=[32m"css-y4cjyz-MuiTouchRipple-ripple MuiTouchRipple-ripple MuiTouchRipple-rippleVisible MuiTouchRipple-ripplePulsate"[39m
+                        [33mstyle[39m=[32m"width: 1px; height: 1px; top: -0.5px; left: -0.5px;"[39m
+                      [36m>[39m
+                        [36m<span[39m
+                          [33mclass[39m=[32m"MuiTouchRipple-child MuiTouchRipple-childPulsate"[39m
+                        [36m/>[39m
+                      [36m</span>[39m
+                    [36m</span>[39m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33maria-label[39m=[32m"Mock Facebook Login for testing"[39m
+                    [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButton-colorPrimary MuiButton-fullWidth css-1xo9v4l-MuiButtonBase-root-MuiButton-root"[39m
+                    [33mdata-testid[39m=[32m"mock-facebook-login-button"[39m
+                    [33mtabindex[39m=[32m"0"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiButton-icon MuiButton-startIcon MuiButton-iconSizeLarge css-hev6se-MuiButton-startIcon"[39m
+                    [36m>[39m
+                      [36m<svg[39m
+                        [33maria-hidden[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"[39m
+                        [33mdata-testid[39m=[32m"FacebookIcon"[39m
+                        [33mfocusable[39m=[32m"false"[39m
+                        [33mviewBox[39m=[32m"0 0 24 24"[39m
+                      [36m>[39m
+                        [36m<path[39m
+                          [33md[39m=[32m"M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"[39m
+                        [36m/>[39m
+                      [36m</svg>[39m
+                    [36m</span>[39m
+                    [0mMock Facebook Login[0m
+                  [36m</button>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-1r4b5bp-MuiTypography-root"[39m
+                    [33mstyle[39m=[32m"--Typography-textAlign: center;"[39m
+                  [36m>[39m
+                    [0mBy continuing, you agree to our Terms and Privacy Policy[0m
+                  [36m</p>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33maria-orientation[39m=[32m"horizontal"[39m
+                  [33mclass[39m=[32m"MuiDivider-root MuiDivider-fullWidth MuiDivider-withChildren css-npc9b-MuiDivider-root"[39m
+                  [33mrole[39m=[32m"separator"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiDivider-wrapper css-1134oje-MuiDivider-wrapper"[39m
+                  [36m>[39m
+                    [36m<p[39m
+                      [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                    [36m>[39m
+                      [0mor[0m
+                    [36m</p>[39m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 MuiTypography-alignCenter css-1r4b5bp-MuiTypography-root"[39m
+                  [33mstyle[39m=[32m"--Typography-textAlign: center;"[39m
+                [36m>[39m
+                  [0mDon't have an account? Contact your administrator[0m
+                [36m</p>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</main>[39m
+        [36m</div>[39m
+      [36m</body>[39m
+    [36m</html>[39m
+
+      334 |     
+      335 |     await waitFor(() => {
+    > 336 |       expect(mockNavigate).toHaveBeenCalledWith('/portal/parent');
+          |                            ^
+      337 |     }, { timeout: 5000 });
+      338 |   }, 10000);
+      339 |
+
+      at toHaveBeenCalledWith (src/pages/LoginPage.test.jsx:336:28)
+      at runWithExpensiveErrorDiagnosticsDisabled (node_modules/@testing-library/dom/dist/config.js:47:12)
+      at checkCallback (node_modules/@testing-library/dom/dist/wait-for.js:124:77)
+      at checkRealTimersCallback (node_modules/@testing-library/dom/dist/wait-for.js:118:16)
+
+  ● LoginPage › redirects authenticated user to role-specific route
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "/dashboard/guru"
+
+    Number of calls: 0
+
+    Ignored nodes: comments, script, style
+    [36m<html>[39m
+      [36m<head>[39m
+        [36m<meta[39m
+          [33mcontent[39m=[32m""[39m
+          [33mname[39m=[32m"emotion-insertion-point"[39m
+        [36m/>[39m
+      [36m</head>[39m
+      [36m<body>[39m
+        [36m<div>[39m
+          [36m<main[39m
+            [33mclass[39m=[32m"MuiBox-root css-1rg9k9"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-1jdfalb"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiBox-root css-i0vgz5"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiBox-root css-f58x1t"[39m
+                [36m>[39m
+                  [36m<img[39m
+                    [33malt[39m=[32m"Rangkaiedu Logo"[39m
+                    [33msrc[39m=[32m"test-file-stub"[39m
+                    [33mstyle[39m=[32m"width: 100%; height: 100%; object-fit: cover;"[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiStack-root css-196dojr-MuiStack-root"[39m
+                [36m>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                  [36m>[39m
+                    [0mEN[0m
+                  [36m</p>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiSwitch-root MuiSwitch-sizeSmall css-fzgmul-MuiSwitch-root"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"[39m
+                        [33mrole[39m=[32m"switch"[39m
+                        [33mtype[39m=[32m"checkbox"[39m
+                      [36m/>[39m
+                      [36m<span[39m
+                        [33mclass[39m=[32m"MuiSwitch-thumb css-17jyosd-MuiSwitch-thumb"[39m
+                      [36m/>[39m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiSwitch-track css-tj8d99-MuiSwitch-track"[39m
+                    [36m/>[39m
+                  [36m</span>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                  [36m>[39m
+                    [0mID[0m
+                  [36m</p>[39m
+                [36m</div>[39m
+                [36m<h1[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-h3 css-p06om4-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mWelcome to Rangkaiedu[0m
+                [36m</h1>[39m
+                [36m<h6[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-h6 css-efxhx8-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mChoose your role to get started[0m
+                [36m</h6>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row css-19rdnyt-MuiGrid-root"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1pgp8yv-MuiPaper-root-MuiCard-root"[39m
+                      [33mstyle[39m=[32m"--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); opacity: 1; transition-delay: 0ms; transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-fullWidth css-u502b5-MuiButtonBase-root-MuiButton-root"[39m
+                        [33mtabindex[39m=[32m"0"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [36m<svg[39m
+                          [33maria-hidden[39m=[32m"true"[39m
+                          [33mclass[39m=[32m"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1ottyza-MuiSvgIcon-root"[39m
+                          [33mdata-testid[39m=[32m"FamilyRestroomIcon"[39m
+                          [33mfocusable[39m=[32m"false"[39m
+                          [33mviewBox[39m=[32m"0 0 24 24"[39m
+                        [36m>[39m
+                          [36m<path[39m
+                            [33md[39m=[32m"M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2m4 18v-6h2.5l-2.54-7.63C19.68 7.55 18.92 7 18.06 7h-.12c-.86 0-1.63.55-1.9 1.37l-.86 2.58c1.08.6 1.82 1.73 1.82 3.05v8zm-7.5-10.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5S11 9.17 11 10s.67 1.5 1.5 1.5M5.5 6c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2m2 16v-7H9V9c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v6h1.5v7zm6.5 0v-4h1v-4c0-.82-.68-1.5-1.5-1.5h-2c-.82 0-1.5.68-1.5 1.5v4h1v4z"[39m
+                          [36m/>[39m
+                        [36m</svg>[39m
+                        [36m<h6[39m
+                          [33mclass[39m=[32m"MuiTypography-root MuiTypography-h6 css-w2g6f8-MuiTypography-root"[39m
+                        [36m>[39m
+                          [0mParent[0m
+                        [36m</h6>[39m
+                        [36m<p[39m
+                          [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-19b5ozw-MuiTypography-root"[39m
+                        [36m>[39m
+                          [0mView your child's grades and progress in real-time.[0m
+                        [36m</p>[39m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1pgp8yv-MuiPaper-root-MuiCard-root"[39m
+                      [33mstyle[39m=[32m"--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12); opacity: 1; transition-delay: 200ms; transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1) 200ms;"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiB...
+
+      420 |     // Wait for navigation to happen
+      421 |     await waitFor(() => {
+    > 422 |       expect(mockNavigate).toHaveBeenCalledWith('/dashboard/guru');
+          |                            ^
+      423 |     }, { timeout: 10000 });
+      424 |   }, 15000);
+      425 |
+
+      at toHaveBeenCalledWith (src/pages/LoginPage.test.jsx:422:28)
+      at runWithExpensiveErrorDiagnosticsDisabled (node_modules/@testing-library/dom/dist/config.js:47:12)
+      at checkCallback (node_modules/@testing-library/dom/dist/wait-for.js:124:77)
+      at checkRealTimersCallback (node_modules/@testing-library/dom/dist/wait-for.js:118:16)
+
+  ● LoginPage › handles loading state during login processes
+
+    expect(received).toBeInTheDocument()
+
+    received value must be an HTMLElement or an SVGElement.
+    Received has value: null
+
+    Ignored nodes: comments, script, style
+    [36m<html>[39m
+      [36m<head>[39m
+        [36m<meta[39m
+          [33mcontent[39m=[32m""[39m
+          [33mname[39m=[32m"emotion-insertion-point"[39m
+        [36m/>[39m
+      [36m</head>[39m
+      [36m<body>[39m
+        [36m<div>[39m
+          [36m<main[39m
+            [33mclass[39m=[32m"MuiBox-root css-1rg9k9"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-1jdfalb"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiBox-root css-i0vgz5"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiBox-root css-f58x1t"[39m
+                [36m>[39m
+                  [36m<img[39m
+                    [33malt[39m=[32m"Rangkaiedu Logo"[39m
+                    [33msrc[39m=[32m"test-file-stub"[39m
+                    [33mstyle[39m=[32m"width: 100%; height: 100%; object-fit: cover;"[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiStack-root css-196dojr-MuiStack-root"[39m
+                [36m>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                  [36m>[39m
+                    [0mEN[0m
+                  [36m</p>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiSwitch-root MuiSwitch-sizeSmall css-fzgmul-MuiSwitch-root"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"[39m
+                        [33mrole[39m=[32m"switch"[39m
+                        [33mtype[39m=[32m"checkbox"[39m
+                      [36m/>[39m
+                      [36m<span[39m
+                        [33mclass[39m=[32m"MuiSwitch-thumb css-17jyosd-MuiSwitch-thumb"[39m
+                      [36m/>[39m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiSwitch-track css-tj8d99-MuiSwitch-track"[39m
+                    [36m/>[39m
+                  [36m</span>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                  [36m>[39m
+                    [0mID[0m
+                  [36m</p>[39m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1rzje4a-MuiButtonBase-root-MuiButton-root"[39m
+                  [33mtabindex[39m=[32m"0"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m← [0m
+                  [0mBack to roles[0m
+                [36m</button>[39m
+                [36m<h1[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-h4 css-10tsqdu-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mLogin as Parent[0m
+                [36m</h1>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiTabs-root css-ee6ibs-MuiTabs-root"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiTabs-scroller MuiTabs-fixed css-s2t35c-MuiTabs-scroller"[39m
+                    [33mstyle[39m=[32m"overflow: hidden; margin-bottom: 0px;"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"MuiTabs-list MuiTabs-flexContainer css-hzcega-MuiTabs-list"[39m
+                      [33mrole[39m=[32m"tablist"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33maria-selected[39m=[32m"false"[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                        [33mrole[39m=[32m"tab"[39m
+                        [33mtabindex[39m=[32m"-1"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEmail[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33maria-selected[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth Mui-selected css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                        [33mrole[39m=[32m"tab"[39m
+                        [33mtabindex[39m=[32m"0"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mWhatsApp[0m
+                        [36m<span[39m
+                          [33mclass[39m=[32m"MuiTouchRipple-root css-r3djoj-MuiTouchRipple-root"[39m
+                        [36m/>[39m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33maria-selected[39m=[32m"false"[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                        [33mrole[39m=[32m"tab"[39m
+                        [33mtabindex[39m=[32m"-1"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mSocial[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiTabs-indicator css-1qltlow-MuiTabs-indicator"[39m
+                      [33mstyle[39m=[32m"left: 0px; width: 0px;"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiStack-root css-lbjakd-MuiStack-root"[39m
+                [36m>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiTypography-root MuiTypography-body1 MuiTypography-alignCenter css-1j3qii7-MuiTypography-root"[39m
+                    [33mstyle[39m=[32m"--Typography-textAlign: center;"[39m
+                  [36m>[39m
+                    [0mEnter the 6-digit OTP sent to +6281234567890[0m
+                  [36m</p>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-dzmwfx-MuiFormControl-root-MuiTextField-root"[39m
+                  [36m>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formCo...
+
+      500 |     // Wait a bit for the loading state to appear
+      501 |     await waitFor(() => {
+    > 502 |       expect(screen.queryByRole('progressbar')).toBeInTheDocument();
+          |                                                 ^
+      503 |     }, { timeout: 5000 });
+      504 |   }, 10000);
+      505 |
+
+      at __EXTERNAL_MATCHER_TRAP__ (node_modules/expect/build/index.js:2240:22)
+      at Object.throwingMatcher [as toBeInTheDocument] (node_modules/expect/build/index.js:2241:6)
+      at toBeInTheDocument (src/pages/LoginPage.test.jsx:502:49)
+      at runWithExpensiveErrorDiagnosticsDisabled (node_modules/@testing-library/dom/dist/config.js:47:12)
+      at checkCallback (node_modules/@testing-library/dom/dist/wait-for.js:124:77)
+      at checkRealTimersCallback (node_modules/@testing-library/dom/dist/wait-for.js:118:16)
+
+  ● LoginPage › handles email login form validation
+
+    Unable to find an element with the text: Please enter a valid email. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<main[39m
+          [33mclass[39m=[32m"MuiBox-root css-1rg9k9"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"MuiBox-root css-1jdfalb"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-i0vgz5"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiBox-root css-f58x1t"[39m
+              [36m>[39m
+                [36m<img[39m
+                  [33malt[39m=[32m"Rangkaiedu Logo"[39m
+                  [33msrc[39m=[32m"test-file-stub"[39m
+                  [33mstyle[39m=[32m"width: 100%; height: 100%; object-fit: cover;"[39m
+                [36m/>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiStack-root css-196dojr-MuiStack-root"[39m
+              [36m>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mEN[0m
+                [36m</p>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"MuiSwitch-root MuiSwitch-sizeSmall css-fzgmul-MuiSwitch-root"[39m
+                [36m>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"[39m
+                      [33mrole[39m=[32m"switch"[39m
+                      [33mtype[39m=[32m"checkbox"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiSwitch-thumb css-17jyosd-MuiSwitch-thumb"[39m
+                    [36m/>[39m
+                  [36m</span>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiSwitch-track css-tj8d99-MuiSwitch-track"[39m
+                  [36m/>[39m
+                [36m</span>[39m
+                [36m<p[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mID[0m
+                [36m</p>[39m
+              [36m</div>[39m
+              [36m<button[39m
+                [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1rzje4a-MuiButtonBase-root-MuiButton-root"[39m
+                [33mtabindex[39m=[32m"0"[39m
+                [33mtype[39m=[32m"button"[39m
+              [36m>[39m
+                [0m← [0m
+                [0mBack to roles[0m
+              [36m</button>[39m
+              [36m<h1[39m
+                [33mclass[39m=[32m"MuiTypography-root MuiTypography-h4 css-10tsqdu-MuiTypography-root"[39m
+              [36m>[39m
+                [0mLogin as Parent[0m
+              [36m</h1>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiTabs-root css-ee6ibs-MuiTabs-root"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiTabs-scroller MuiTabs-fixed css-s2t35c-MuiTabs-scroller"[39m
+                  [33mstyle[39m=[32m"overflow: hidden; margin-bottom: 0px;"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiTabs-list MuiTabs-flexContainer css-hzcega-MuiTabs-list"[39m
+                    [33mrole[39m=[32m"tablist"[39m
+                  [36m>[39m
+                    [36m<button[39m
+                      [33maria-selected[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth Mui-selected css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                      [33mrole[39m=[32m"tab"[39m
+                      [33mtabindex[39m=[32m"0"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mEmail[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33maria-selected[39m=[32m"false"[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                      [33mrole[39m=[32m"tab"[39m
+                      [33mtabindex[39m=[32m"-1"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mWhatsApp[0m
+                    [36m</button>[39m
+                    [36m<button[39m
+                      [33maria-selected[39m=[32m"false"[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                      [33mrole[39m=[32m"tab"[39m
+                      [33mtabindex[39m=[32m"-1"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mSocial[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiTabs-indicator css-1qltlow-MuiTabs-indicator"[39m
+                    [33mstyle[39m=[32m"left: 0px; width: 0px;"[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<form[39m
+                [33mclass[39m=[32m"MuiBox-root css-8atqhb"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiStack-root css-lbjakd-MuiStack-root"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33maria-describedby[39m=[32m"email-helper-text"[39m
+                    [33mclass[39m=[32m"MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"[39m
+                  [36m>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-error MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"[39m
+                      [33mdata-shrink[39m=[32m"true"[39m
+                      [33mfor[39m=[32m"«r54»"[39m
+                      [33mid[39m=[32m"«r54»-label"[39m
+                    [36m>[39m
+                      [0mEmail Address[0m
+                    [36m</label>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary Mui-error MuiInputBase-fullWidth MuiInputBase-formControl MuiInp...
+
+      547 |     });
+      548 |     
+    > 549 |     await waitFor(() => {
+          |                  ^
+      550 |       expect(screen.getByText('Please enter a valid email')).toBeInTheDocument();
+      551 |     }, { timeout: 5000 });
+      552 |
+
+      at waitForWrapper (node_modules/@testing-library/dom/dist/wait-for.js:163:27)
+      at Object.<anonymous> (src/pages/LoginPage.test.jsx:549:18)
+
+  ● LoginPage › handles successful email login
+
+    expect(jest.fn()).toHaveBeenCalledWith(...expected)
+
+    Expected: "/portal/parent"
+
+    Number of calls: 0
+
+    Ignored nodes: comments, script, style
+    [36m<html>[39m
+      [36m<head>[39m
+        [36m<meta[39m
+          [33mcontent[39m=[32m""[39m
+          [33mname[39m=[32m"emotion-insertion-point"[39m
+        [36m/>[39m
+      [36m</head>[39m
+      [36m<body>[39m
+        [36m<div>[39m
+          [36m<main[39m
+            [33mclass[39m=[32m"MuiBox-root css-1rg9k9"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"MuiBox-root css-1jdfalb"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"MuiBox-root css-i0vgz5"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiBox-root css-f58x1t"[39m
+                [36m>[39m
+                  [36m<img[39m
+                    [33malt[39m=[32m"Rangkaiedu Logo"[39m
+                    [33msrc[39m=[32m"test-file-stub"[39m
+                    [33mstyle[39m=[32m"width: 100%; height: 100%; object-fit: cover;"[39m
+                  [36m/>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiStack-root css-196dojr-MuiStack-root"[39m
+                [36m>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                  [36m>[39m
+                    [0mEN[0m
+                  [36m</p>[39m
+                  [36m<span[39m
+                    [33mclass[39m=[32m"MuiSwitch-root MuiSwitch-sizeSmall css-fzgmul-MuiSwitch-root"[39m
+                  [36m>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"PrivateSwitchBase-input MuiSwitch-input css-12xagqm-MuiSwitchBase-root"[39m
+                        [33mrole[39m=[32m"switch"[39m
+                        [33mtype[39m=[32m"checkbox"[39m
+                      [36m/>[39m
+                      [36m<span[39m
+                        [33mclass[39m=[32m"MuiSwitch-thumb css-17jyosd-MuiSwitch-thumb"[39m
+                      [36m/>[39m
+                    [36m</span>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiSwitch-track css-tj8d99-MuiSwitch-track"[39m
+                    [36m/>[39m
+                  [36m</span>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"MuiTypography-root MuiTypography-body2 css-1wle3ir-MuiTypography-root"[39m
+                  [36m>[39m
+                    [0mID[0m
+                  [36m</p>[39m
+                [36m</div>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary css-1rzje4a-MuiButtonBase-root-MuiButton-root"[39m
+                  [33mtabindex[39m=[32m"0"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0m← [0m
+                  [0mBack to roles[0m
+                [36m</button>[39m
+                [36m<h1[39m
+                  [33mclass[39m=[32m"MuiTypography-root MuiTypography-h4 css-10tsqdu-MuiTypography-root"[39m
+                [36m>[39m
+                  [0mLogin as Parent[0m
+                [36m</h1>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"MuiTabs-root css-ee6ibs-MuiTabs-root"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiTabs-scroller MuiTabs-fixed css-s2t35c-MuiTabs-scroller"[39m
+                    [33mstyle[39m=[32m"overflow: hidden; margin-bottom: 0px;"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"MuiTabs-list MuiTabs-flexContainer css-hzcega-MuiTabs-list"[39m
+                      [33mrole[39m=[32m"tablist"[39m
+                    [36m>[39m
+                      [36m<button[39m
+                        [33maria-selected[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth Mui-selected css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                        [33mrole[39m=[32m"tab"[39m
+                        [33mtabindex[39m=[32m"0"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mEmail[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33maria-selected[39m=[32m"false"[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                        [33mrole[39m=[32m"tab"[39m
+                        [33mtabindex[39m=[32m"-1"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mWhatsApp[0m
+                      [36m</button>[39m
+                      [36m<button[39m
+                        [33maria-selected[39m=[32m"false"[39m
+                        [33mclass[39m=[32m"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary MuiTab-fullWidth css-19s91xh-MuiButtonBase-root-MuiTab-root"[39m
+                        [33mrole[39m=[32m"tab"[39m
+                        [33mtabindex[39m=[32m"-1"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mSocial[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"MuiTabs-indicator css-1qltlow-MuiTabs-indicator"[39m
+                      [33mstyle[39m=[32m"left: 0px; width: 0px;"[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<form[39m
+                  [33mclass[39m=[32m"MuiBox-root css-8atqhb"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"MuiStack-root css-lbjakd-MuiStack-root"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33maria-describedby[39m=[32m"email-helper-text"[39m
+                      [33mclass[39m=[32m"MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-cmpglg-MuiFormControl-root-MuiTextField-root"[39m
+                    [36m>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"[39m
+                        [33mdata-shrink[39m=...
+
+      611 |       });
+      612 |       expect(mockLogin).toHaveBeenCalledWith('mock-jwt-token');
+    > 613 |       expect(mockNavigate).toHaveBeenCalledWith('/portal/parent');
+          |                            ^
+      614 |     }, { timeout: 5000 });
+      615 |   }, 10000);
+      616 | });
+
+      at toHaveBeenCalledWith (src/pages/LoginPage.test.jsx:613:28)
+      at runWithExpensiveErrorDiagnosticsDisabled (node_modules/@testing-library/dom/dist/config.js:47:12)
+      at checkCallback (node_modules/@testing-library/dom/dist/wait-for.js:124:77)
+      at checkRealTimersCallback (node_modules/@testing-library/dom/dist/wait-for.js:118:16)
+
+FAIL src/contexts/AuthContext.test.jsx
+  AuthContext
+    ✓ initializes without token, sets user to null and loading to false (74 ms)
+    ✓ initializes with valid token, decodes user and sets state (29 ms)
+    ✓ initializes with expired token, attempts refresh and logs out if fails (71 ms)
+    ✓ login sets user, token in storage, clears error (179 ms)
+    ✓ login fails with invalid token, sets error (44 ms)
+    ✓ logout clears user, error, calls logout util (32 ms)
+    ✓ refresh succeeds, updates token and user (36 ms)
+    ✓ refresh fails, logs out and sets error (37 ms)
+    ✓ hasRole returns true for matching role (20 ms)
+    ✓ hasRole returns false for non-matching role (13 ms)
+    ✓ isAuthorized returns true if authenticated and has required role (9 ms)
+    ✓ isAuthorized returns false if not authenticated (10 ms)
+    ✓ throws error if useAuth used outside provider (81 ms)
+    ✓ sets up axios request interceptor with token (6 ms)
+    ✕ handles 401 response by logging out and redirecting (2021 ms)
+
+  ● AuthContext › handles 401 response by logging out and redirecting
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "false"
+    Received: "true"
+
+    Ignored nodes: comments, script, style
+    [36m<html>[39m
+      [36m<head />[39m
+      [36m<body>[39m
+        [36m<div>[39m
+          [36m<div>[39m
+            [36m<div[39m
+              [33mdata-testid[39m=[32m"user"[39m
+            [36m>[39m
+              [0m{"id":"1","role":"admin","exp":1759333626}[0m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mdata-testid[39m=[32m"loading"[39m
+            [36m>[39m
+              [0mfalse[0m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mdata-testid[39m=[32m"error"[39m
+            [36m/>[39m
+            [36m<div[39m
+              [33mdata-testid[39m=[32m"isAuthenticated"[39m
+            [36m>[39m
+              [0mtrue[0m
+            [36m</div>[39m
+            [36m<button>[39m
+              [0mLogin[0m
+            [36m</button>[39m
+            [36m<button>[39m
+              [0mLogout[0m
+            [36m</button>[39m
+            [36m<button>[39m
+              [0mRefresh[0m
+            [36m</button>[39m
+            [36m<button>[39m
+              [0mTest API[0m
+            [36m</button>[39m
+            [36m<div[39m
+              [33mdata-testid[39m=[32m"hasRole"[39m
+            [36m>[39m
+              [0mtrue[0m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mdata-testid[39m=[32m"isAuthorized"[39m
+            [36m>[39m
+              [0mtrue[0m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</body>[39m
+    [36m</html>[39m
+
+      414 |     // Verify state changes after 401 handling
+      415 |     await waitFor(() => {
+    > 416 |       expect(screen.getByTestId('isAuthenticated').textContent).toBe('false');
+          |                                                                 ^
+      417 |       expect(screen.getByTestId('user').textContent).toBe('null');
+      418 |       expect(screen.getByTestId('error').textContent).toBe('');
+      419 |       expect(authUtils.logout).toHaveBeenCalled();
+
+      at toBe (src/contexts/AuthContext.test.jsx:416:65)
+      at runWithExpensiveErrorDiagnosticsDisabled (node_modules/@testing-library/dom/dist/config.js:47:12)
+      at checkCallback (node_modules/@testing-library/dom/dist/wait-for.js:124:77)
+      at checkRealTimersCallback (node_modules/@testing-library/dom/dist/wait-for.js:118:16)
+
+PASS src/components/ProtectedRoute.test.jsx
+  ProtectedRoute
+    ✓ shows loading spinner when loading is true (80 ms)
+    ✓ redirects to login when not authenticated (7 ms)
+    ✓ shows unauthorized alert when required role does not match (51 ms)
+    ✓ renders children when authenticated and authorized (no required role) (9 ms)
+    ✓ renders children when authenticated and has required role (6 ms)
+    ✓ handles multiple required roles (array) - any role match (5 ms)
+    ✓ handles multiple required roles (array) - no role match (18 ms)
+    ✓ shows accessible error message with proper ARIA attributes (19 ms)
+    ✓ handles requireAllRoles parameter correctly (16 ms)
+
+Test Suites: 3 failed, 1 passed, 4 total
+Tests:       13 failed, 35 passed, 48 total
+Snapshots:   0 total
+Time:        145.604 s
